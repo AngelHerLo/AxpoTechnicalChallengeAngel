@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axpo.PowerTrade", "Axpo.PowerTrade\Axpo.PowerTrade.csproj", "{9D3B6744-FD22-4DC8-85C4-5AF650184E1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axpo.PowerTradeForecast", "Axpo.PowerTrade\Axpo.PowerTradeForecast.csproj", "{9D3B6744-FD22-4DC8-85C4-5AF650184E1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerTradeApp.Tests", "PowerTradeApp.Tests\PowerTradeApp.Tests.csproj", "{F7B4CFC7-6BA6-4F02-B40D-351CB02D39F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9D3B6744-FD22-4DC8-85C4-5AF650184E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D3B6744-FD22-4DC8-85C4-5AF650184E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D3B6744-FD22-4DC8-85C4-5AF650184E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B4CFC7-6BA6-4F02-B40D-351CB02D39F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B4CFC7-6BA6-4F02-B40D-351CB02D39F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B4CFC7-6BA6-4F02-B40D-351CB02D39F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B4CFC7-6BA6-4F02-B40D-351CB02D39F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

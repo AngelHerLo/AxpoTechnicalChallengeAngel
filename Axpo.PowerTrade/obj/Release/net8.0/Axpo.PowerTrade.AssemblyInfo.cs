@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Axpo.PowerTrade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a44dfff92ff62a87023523b9af608edde8c0cb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Axpo.PowerTrade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Axpo.PowerTrade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
