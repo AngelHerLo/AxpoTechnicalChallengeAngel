@@ -15,6 +15,7 @@ namespace Axpo.PowerTradeForecast.Application.Services
         {
             _validator = new HourlyVolumeValidator();
         }
+
         public void WriteToCsv(string filePath, IEnumerable<HourlyVolume> data)
         {
             foreach (var hourlyVolume in data)
@@ -38,6 +39,7 @@ namespace Axpo.PowerTradeForecast.Application.Services
             csv.NextRecord();
             csv.WriteRecords(data);
         }
+
         private static void EnsureDirectoryExists(string filePath)
         {
             string directory = Path.GetDirectoryName(filePath);
@@ -46,6 +48,5 @@ namespace Axpo.PowerTradeForecast.Application.Services
                 Directory.CreateDirectory(directory);
             }
         }
-
     }
 }

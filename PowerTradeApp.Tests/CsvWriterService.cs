@@ -1,6 +1,6 @@
-﻿using FluentAssertions;
-using Axpo.PowerTradeForecast.Application.DTOs;
+﻿using Axpo.PowerTradeForecast.Application.DTOs;
 using Axpo.PowerTradeForecast.Application.Services;
+using FluentAssertions;
 
 namespace PowerTradeApp.Tests
 {

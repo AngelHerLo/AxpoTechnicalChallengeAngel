@@ -1,7 +1,6 @@
 ﻿using Axpo.PowerTradeForecast.Application.DTOs;
 using FluentAssertions;
 using PowerTradeApp.Application.Validators;
-using Xunit;
 
 namespace PowerTradeApp.Tests
 {

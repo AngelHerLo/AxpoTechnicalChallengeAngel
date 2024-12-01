@@ -1,25 +1,17 @@
-﻿using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
-using Axpo.PowerTradeForecast.Application.DTOs;
-using Axpo.PowerTradeForecast.Application.Interfaces;
-using Microsoft.Extensions.Logging;
+﻿using Axpo;
 using Axpo.PowerTradeForecast.Application.Services;
-using Axpo;
+using Microsoft.Extensions.Logging;
+using Moq;
 
 public class PowerTradeServiceTests
 {
     private readonly Mock<IPowerService> _powerServiceMock;
-    private readonly Mock<ILogger<ScheduledTask>> _loggerMock;
+    private readonly Mock<ILogger<PowerTradeReportScheduler>> _loggerMock;
 
     public PowerTradeServiceTests()
     {
         _powerServiceMock = new Mock<IPowerService>();
-        _loggerMock = new Mock<ILogger<ScheduledTask>>();
-
+        _loggerMock = new Mock<ILogger<PowerTradeReportScheduler>>();
     }
 
     [Fact]
@@ -27,9 +19,8 @@ public class PowerTradeServiceTests
     {
         // Arrange
 
-        var date = DateTime.UtcNow; 
-        var timeZone = TimeZoneInfo.Utc; 
-
+        var date = DateTime.UtcNow;
+        var timeZone = TimeZoneInfo.Utc;
 
         var mockTrade = PowerTrade.Create(date, 1);
 
@@ -43,6 +34,6 @@ public class PowerTradeServiceTests
 
         // Assert
         Assert.NotNull(result);
-        Assert.Single(result); 
+        Assert.Single(result);
     }
 }

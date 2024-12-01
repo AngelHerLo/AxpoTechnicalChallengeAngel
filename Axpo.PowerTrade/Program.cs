@@ -1,11 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Axpo;
+using Axpo.PowerTradeForecast.Application.Interfaces;
+using Axpo.PowerTradeForecast.Application.Services;
+using Axpo.PowerTradeForecast.Infrastructure.Configuration;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using Axpo.PowerTradeForecast.Application.Interfaces;
-using Axpo.PowerTradeForecast.Application.Services;
-using Axpo;
-using Axpo.PowerTradeForecast.Infrastructure.Configuration;
 
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((context, config) =>
@@ -22,7 +22,7 @@ var builder = Host.CreateDefaultBuilder(args)
         services.AddSingleton<PowerService>();
         services.AddScoped<IPowerTradeService, PowerTradeService>();
         services.AddScoped<ICsvWriterService, CsvWriterService>();
-        services.AddHostedService<ScheduledTask>();
+        services.AddHostedService<PowerTradeReportScheduler>();
 
         // Logging
         Log.Logger = new LoggerConfiguration()
